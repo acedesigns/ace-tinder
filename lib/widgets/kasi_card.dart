@@ -29,9 +29,9 @@ class _BuildKasiCardState extends State<BuildKasiCard> {
   @override
   Widget build(BuildContext context) {
     return  ClipRRect(
-      borderRadius: BorderRadius.circular(40),
+      borderRadius: BorderRadius.circular(20),
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.66,
+        height: MediaQuery.of(context).size.height * 0.75,
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
@@ -54,7 +54,11 @@ class _BuildKasiCardState extends State<BuildKasiCard> {
               children: [
                 const Spacer(),
                 builsUserName(),
-                buildStatus()
+                buildStatus(),
+                const SizedBox(height: 6,),
+                buildPrevTxt(),
+                const SizedBox(height: 16,),
+                buildButtons()
               ],
             ),
           ),
@@ -105,4 +109,29 @@ class _BuildKasiCardState extends State<BuildKasiCard> {
       ],
     );
   }
+
+  Widget buildPrevTxt() {
+    return Row(
+      children: const [
+        Text(
+          '7 kilometres away',
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
+      ],
+    );
+  }
+
+  Widget buildButtons() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: const [
+        ElevatedButton(onPressed: null, child: Icon(Icons.undo, color: Colors.yellow, size: 30,)),
+        ElevatedButton(onPressed: null, child: Icon(Icons.clear, color: Colors.red, size: 30,)),
+        ElevatedButton(onPressed: null, child: Icon(Icons.star, color: Colors.blue, size: 30,)),
+        ElevatedButton(onPressed: null, child: Icon(Icons.favorite, color: Colors.teal, size: 30,)),
+        ElevatedButton(onPressed: null, child: Icon(Icons.bolt, color: Colors.purple, size: 30,)),
+      ],
+    );
+  }
+
 }

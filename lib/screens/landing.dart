@@ -38,7 +38,7 @@ class _LandingAppScreenState extends State<LandingAppScreen> {
             const SizedBox(height: 16,),
             BuildKasiCard(user: user),
             const SizedBox(height: 16,),
-            buildButtons()
+            //buildButtons()
           ],
         ),
           ),
@@ -52,8 +52,8 @@ class _LandingAppScreenState extends State<LandingAppScreen> {
         Icon(Icons.local_fire_department_rounded, size: 46, color: Colors.redAccent,),
         SizedBox(width: 5,),
         Text(
-          '#SBWL Mjolo',
-          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          'Yekan\' uMjolo',
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
       ],
     );

@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             elevation: 8,
             shape: const CircleBorder(),
-            minimumSize: const Size.square(80),
+            minimumSize: const Size.square(50),
             backgroundColor: Colors.white,
           )
         )
