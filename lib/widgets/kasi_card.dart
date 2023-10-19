@@ -111,8 +111,8 @@ class _BuildKasiCardState extends State<BuildKasiCard> {
   }
 
   Widget buildPrevTxt() {
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         Text(
           '7 kilometres away',
           style: TextStyle(fontSize: 20, color: Colors.white),
@@ -122,9 +122,9 @@ class _BuildKasiCardState extends State<BuildKasiCard> {
   }
 
   Widget buildButtons() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
+      children: [
         ElevatedButton(onPressed: null, child: Icon(Icons.undo, color: Colors.yellow, size: 30,)),
         ElevatedButton(onPressed: null, child: Icon(Icons.clear, color: Colors.red, size: 30,)),
         ElevatedButton(onPressed: null, child: Icon(Icons.star, color: Colors.blue, size: 30,)),

@@ -47,8 +47,8 @@ class _LandingAppScreenState extends State<LandingAppScreen> {
   }
 
   Widget buildLogo() {
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         Icon(Icons.local_fire_department_rounded, size: 46, color: Colors.redAccent,),
         SizedBox(width: 5,),
         Text(
@@ -60,9 +60,9 @@ class _LandingAppScreenState extends State<LandingAppScreen> {
   }
 
   Widget buildButtons() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
+      children: [
         ElevatedButton(onPressed: null, child: Icon(Icons.clear, color: Colors.red, size: 45,)),
         ElevatedButton(onPressed: null, child: Icon(Icons.star, color: Colors.blue, size: 45,)),
         ElevatedButton(onPressed: null, child: Icon(Icons.favorite, color: Colors.teal, size: 45,))
